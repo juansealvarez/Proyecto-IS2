@@ -1,0 +1,24 @@
+
+<head>
+    <title>Error :( - ULima E-Sports</title><link rel="icon" href="images/icon.png" type="image/png" />
+    <%- include('./partials/navAdmin.ejs')%> 
+</head>
+<body>
+    <div class="containe p-4">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="card text-center">
+                    <div class="card-body">
+        <% if(login) {%> 
+        <h1>El usuario conectado es : <%=rol %></h1>
+        <a class="button" href="logout" class="a-logout">Logout</a>
+        <% }else { %> 
+            <h1><%= rol  %> </h1>
+            <a href="/" class="a-login">Ir al login</a>
+            <% } %> 
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
